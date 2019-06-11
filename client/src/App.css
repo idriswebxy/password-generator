@@ -4,9 +4,10 @@
   width: 100%;
 }
 
-h1 {
+h2 {
   font-weight: normal;
   font-size: 42px;
+  color: white;
 }
 
 .passwords {
@@ -14,6 +15,7 @@ h1 {
   padding: 0;
   font-size: 32px;
   margin-bottom: 2em;
+  color: white;
 }
 
 .more {
@@ -30,4 +32,12 @@ h1 {
 
 .more:active {
   background-color: #FFEFA9;
+}
+
+.background {
+  background-color: rgb(35, 147, 192);
+}
+
+.background-2 {
+  background-color: rgb(33, 54, 173);
 }

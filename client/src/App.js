@@ -24,20 +24,23 @@ class App extends Component {
       <div className="App">
         {/* Render the passwords if we have them */}
         {passwords.length ? (
-          <div>
-            <h1>Random password generator</h1>
-            <h1>5 Passwords.</h1>
-            <ul className="passwords">
-              {/*
+          <div className="background">
+            <h2>Random password generator</h2>
+            <div className="background-2">
+              <h3 style={{ color: "yellow" }}>Passwords</h3>
+              <ul className="passwords">
+                {/*
                 Generally it's bad to use "index" as a key.
                 It's ok for this example because there will always
                 be the same number of passwords, and they never
                 change positions in the array.
               */}
-              {passwords.map((password, index) => (
-                <li key={index}>{password}</li>
-              ))}
-            </ul>
+                {passwords.map((password, index) => (
+                  <li key={index}>{password}</li>
+                ))}
+              </ul>
+            </div>
+
             <button className="more" onClick={this.getPasswords}>
               Get More
             </button>
