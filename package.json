@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon index.js",
-    "client": "npm start client --prefix client",
-    "heroku-postbuild": "cd client && npm install && npm run build",
-    "dev": "concurrently \"npm run server \" \"npm run client\""
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
