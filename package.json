@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "server": "nodemon index.js",
+    "client": "npm start client --prefix client",
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "dev": "concurrently \"npm run server \" \"npm run client\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^4.1.0",
     "express": "^4.17.1",
     "nodemon": "^1.19.1",
     "password-generator": "^2.2.0"
